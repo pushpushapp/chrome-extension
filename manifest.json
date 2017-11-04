@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "PushPush",
+  "description": "Send links and SMS messages using OpenFaaS",
+  "version": "1.0",
+  "icons": {
+    "16": "icon_16.png",
+    "48": "icon_48.png",
+    "128": "icon_128.png"
+  },
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": "icon_16.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "js/pushpush.js",
+      "js/http.js",
+      "js/local.js",
+      "js/jquery-2.2.0.min.js",
+      "js/materialize.min.js",
+      "js/gcm.js",
+      "js/background.js",
+      "js/popup.js",
+      "js/note.js",
+      "js/options.js"
+    ]
+  },
+  "permissions": [
+    "gcm",
+    "tabs",
+    "activeTab",
+    "contextMenus",
+    "cookies",
+    "notifications",
+    "idle",
+    "storage",
+    "https://*/*",
+    "http://*/*"
+  ],
+  "short_name": "PushPush",
+  "homepage_url": "https://pushpush.co"
+}
